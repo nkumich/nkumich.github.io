@@ -1,0 +1,114 @@
+/* css styles */
+
+
+/* Update Navbar Logo Size */
+.navbar-container {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+
+.navbar-brand-container {
+  margin-right: auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navbar-brand img.navbar-logo, img.navbar-logo {
+  height: 66px !important;
+  width: auto !important;
+  max-height: none !important;
+  display: block !important;
+}
+
+
+/* Change Home Page Orientation */
+.quarto-about-trestles.column-page,
+.quarto-about-trestles {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+} 
+
+/* Make Picture Appear On Top of Text */
+.quarto-about-trestles .about-entity {
+  order: 1 !important;
+  text-align: center !important;
+  position: static !important;
+  margin: 0 auto 1rem auto !important;
+
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Fix Picture Sizing */
+.quarto-about-trestles .about-entity img,
+.quarto-about-trestles .about-entity img.about-image {
+  max-width: 888px !important;
+  padding-right: 5rem !important;
+  padding-left: 5rem !important;
+  max-width: auto !important;
+}
+
+/* Text Under Picture */
+.quarto-about-trestles .about-contents {
+  order: 2 !important;
+  border-left: none !important;
+  border: none !important;
+  text-align: center !important;
+}
+
+
+/* Title */
+.quarto-about-trestles .about-contents h1.title {
+  text-align: center !important;
+  margin: 0 0 0rem 0 !important;
+  padding: 0 !important;
+  font-family: "Elsie", sans-serif !important;
+}
+
+.quarto-title-block .quarto-title h1.title {
+  text-align: center !important;
+  margin: 0 0 0rem 0 !important;
+  padding: 0 !important;
+  font-family: "Elsie", sans-serif !important;
+}
+
+
+/* Paragraphs */
+.quarto-about-trestles .about-contents p {
+  font-size: 1.5rem !important;
+  text-align: center !important;
+  margin: 0 0 2rem 0 !important;
+  padding-right: 0rem !important;
+  padding-left: 2rem !important;
+}
+
+/* Reduce blank space before footer */
+#quarto-content,
+#quarto-document-content,
+main.content,
+.page-columns,
+.column-page {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer.footer,
+.nav-footer {
+  font-size: 1.3rem !important;
+  margin-top: 0rem !important;
+  padding-top: 0rem !important;
+  padding-bottom: 0.25rem !important;
+  padding-right: 0rem !important;
+  padding-left: 2rem !important;
+}
