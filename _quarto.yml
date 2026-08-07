@@ -1,0 +1,119 @@
+project:
+  type: website
+  output-dir: docs
+  pre-render:  # This can be deleted if you are using the manually curated list of publications in publications.qmd
+    - python xlsx_to_yml.py  # Automatically generate publications.yml from publications.xlsx
+    
+# Meta
+#description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
+#author-meta: "Nita Kanney, MPH"
+
+website:
+  title: "Nita Kanney, MPH"
+  image: files/images/nk headshot epi.JPG
+  favicon: docs/android-chrome-512x512.png
+  description: "PhD Candidate at the University of Michigan School of Public Health"
+ 
+  navbar:
+    background: dark  # You can change the background color here
+    right:   # You can comment out all navigation items here if you just like to keep the index page only
+#      - text: Home
+#        href: index.qmd
+      - text: About
+        href: about.qmd
+       # menu:
+        #  - text: News
+         #   href: posts.qmd#category=news
+         # - text: Events
+          #  href: posts.qmd#category=event      
+         # - text: Contact
+         #   href: contact.qmd             
+      - text: Research
+        menu:
+            - text: Publications Listing  # Automatically generated from publications.xlsx
+              href: pub-listing.qmd
+         # - text: Publications  # Manually curated list of publications
+          #  href: publications.qmd            
+       #   - text: Selected Papers
+        #    href: posts.qmd#category=paper
+            - text: Grants
+              href: projects.qmd                                
+        - text: Teaching and Service # Comment the Teaching part out to remove the Teaching page
+          href: teaching.qmd
+       # - text: Outreach
+        #  menu:        
+         # - text: Presentations
+          #  href: posts.qmd#category=presentation                   
+      #- text: Group   # Comment the Group part out to remove the Group page
+      #  href: people.qmd
+        - text: CV
+          href: files/KanneyN_CV_April092026.pdf
+
+    #right: 
+    #  - text: CV
+     #     href: files/nsf-biosketch.pdf
+     # - icon: github
+     #     href: https://github.com/drganghe/quarto-academic-website-template
+      #    target: _blank
+     # - text: "{{< fa brands bluesky >}}"
+     #     href: https://bsky.app
+     #     target: _blank      
+     # - icon: rss
+      #    href: posts.xml
+       #   target: _blank
+  
+  page-navigation: true
+  back-to-top-navigation: true
+  
+  page-footer: 
+    left: >- 
+    &#169; "<script>document.write(new Date().getFullYear())</script>" Nita Kanney &#8729; Made with [Quarto](https://github.com/drganghe/quarto-academic-website-template)
+    # center: "Build on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
+    right:  >-
+      - icon: github
+        href: https://github.com/NMK2022
+        target: _blank
+      <a class="link-dark me-1" href="https://linkedin.com/in/nitak" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
+      <a class="link-dark me-1" href="https://github.com/NMK2022" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
+      <a class="link-dark me-1" href="https://orcid.org/0000-0002-8060-2356" title="orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
+      <a class="link-dark me-1" href="https://scholar.google.com/citations?hl=en&user=CrSSym8AAAAJ" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
+  
+ # search:
+  #  location: navbar
+   # type: textbox
+  
+  reader-mode: true
+
+  draft-mode: unlinked
+  
+  #repo-url: https://github.com/drganghe/quarto-academic-website-template
+#  repo-actions: [edit, issue, source]
+  
+  open-graph: true
+  
+ # twitter-card: true 
+#  card-style: summary      
+  
+  site-url: "https://NMK2022.github.io/"
+  
+  google-analytics:
+    tracking-id: ""  # Please delete or replace with your own tracking ID
+    anonymize-ip: true 
+
+#bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    #toc: true
+    #footnotes-hover: true
+    #code-copy: true
+    #code-link: true
+    #code-overflow: wrap
+    #fig-align: center
+    #link-external-newwindow: true
+    #email-obfuscation: javascript
+    link-external-filter: '^(?:http:|https:)\/\/NMK2022\.github\.io\/custom'
+ 
+
