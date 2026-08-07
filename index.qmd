@@ -1,0 +1,23 @@
+---
+title: "Nita Kanney, MPH"
+description-meta: ""
+image: "files/images/nk headshot epi.JPG"
+page-navigation: false
+toc: false
+#sidebar: false
+page-layout: full
+
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 88%
+---
+
+:::{#hero-heading}
+
+I am a 4th year Doctoral Candidate at the University of Michigan [School of Public Health](https://sph.umich.edu/epid/phdstudents/Kanney_Nita.html) in the Department of Epidemiology.
+
+My research focuses on how one's life course social and environmental factors impact their epigenetics and subsequent health and aging outcomes.
+:::
+
+
